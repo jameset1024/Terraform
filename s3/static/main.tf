@@ -34,7 +34,7 @@ resource "aws_s3_bucket_policy" "web_policy" {
   policy = data.aws_iam_policy_document.web_policy.json
 }
 
-# Create the policy to allow publi view
+# Create the policy to allow public view
 data "aws_iam_policy_document" "web_policy" {
   version = "2012-10-17"
   statement {
